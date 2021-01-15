@@ -1,0 +1,53 @@
+ {% extends 'assignment8.html' %}
+
+  {% block content %}
+<div class="contact-box">
+
+        <label>Search Username</label> <br><br>
+       <form class="search_form" action="/assignment9" method="GET">
+       <input type="text" placeholder="Search.." name="search">
+       <input type="submit">
+            <BR><br>
+       </form>
+
+    {%  if username and users %}
+        <h3> This is my user list    </h3>
+
+        {% for user in users %}
+          {% if username == user.first_name  %}
+             <h4> name: {{ user.first_name }} {{ user.last_name }}     , Email {{ user.email }}</h4>
+          {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    {% if  users and not username%}
+        <h3> This is my user list</h3>
+        {% for user in users %}
+             <h4> name: {{ user.first_name }} {{ user.last_name }}     , Email {{ user.email }}</h4>
+        {% endfor %}
+     {% endif %}
+
+    {% if  session.get('logged_in') %}
+        <h3> Hello {{ session.get('username') }}</h3>
+        <form action="/logout" method="POST">  <button type="submit">log out</button></form>
+    {% else %}
+            <br>;
+            <form class="registration_form" action="/assignment9" method="POST">
+            <label>Enter Username</label> <br>
+            <input type="text"  name="username">
+            <input type="submit">
+            </form>
+{% endif %}
+<br><br><br>
+
+
+</div>
+ {% endblock %}
+
+
+
+
+
+
+
+

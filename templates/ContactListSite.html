@@ -1,0 +1,54 @@
+<!doctype html>
+<html dir="eng">
+    <head>
+        <title>Contact List site </title>
+          <link rel="Stylesheet" href="{{ url_for('static', filename='css/ContactListSite.css')}}">
+        <link href='https://fonts.googleapis.com/css?family=Tahoma' rel='stylesheet'>
+    </head>
+
+    <body>
+
+
+            <div class="grid-container">
+              <div class="item1"> <img src="{{ url_for('static', filename='images/logoo.jpg')}}"  width="170" height="150" style="position: relative ;border-radius: 8px;"/></a></div>
+            <div class="item2">
+                    <a class="a" href="{{ url_for('hello_home') }}"> About Myself </a>
+                </div>
+            <div class="item3">
+                    <a class="a" href="{{ url_for('HighschoolGraduation') }}"> Highschool Graduation </a>
+                </div>
+            <div class="item4">
+                <a class="a" href="{{ url_for('Edection') }}"> EDUCATION </a>
+            </div>
+            <div class="item5">
+                <a class="a" href="{{ url_for('RelevanteCorse') }}"> Relevant Course</a>
+            </div>
+            <div class="item7">
+                <a class="a" href="{{ url_for('EXPERIENCE') }}">  EXPERIENCE  </a>
+            </div>
+            <div class="item6">
+                <a class="a" href="{{ url_for('assignment8') }}">  SKILLS                </a>
+            </div>
+            <div class="item9">
+                <a class="a" href="{{ url_for('Contactus') }}"> Contact Us</a>
+            </div>
+            <div class="item10">
+                <a class="a" href="{{ url_for('ContactListSite') }}"> Contactlist</a>
+            </div>
+
+
+                             <div class="item11"><a href="https://www.facebook.com/profile.php?id=100005585585138" class="button2"><img src="{{ url_for('static', filename='images/facebook.png')}}" width="40" height="40" style="position: relative;"/></a></div>
+                   <div class="item12"><a href="https://www.linkedin.com/in/haytham-khmaisi-409505197/" class="button2"><img src="{{ url_for('static', filename='images/linkein.png')}}" width="40" height="40" style="position: relative;"/></a></div>
+
+          <div class="mycontact">
+           <main>
+
+           </main>
+        <script src="{{ url_for('static', filename='javascript/ContactListSite.js')}}"></script>
+
+    </div>
+
+
+        </div>
+    </body>
+</html>

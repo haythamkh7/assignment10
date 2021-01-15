@@ -1,0 +1,43 @@
+<!doctype html>
+<html dir="eng">
+    <head>
+        <title>Home page</title>
+                <link rel="Stylesheet" href="{{ url_for('static', filename='css/assignment8.css')}}">
+
+    </head>
+    <body>
+       
+            <div class="grid-container">
+             {% include 'header.html' %}
+            <div class="item9">
+                <a class="a" href="{{ url_for('Contactus') }}"> Contact Us</a>
+            </div>
+            <div class="item10">
+                <a class="a" href="{{ url_for('ContactListSite') }}"> Contactlist</a>
+            </div>
+            <div class="item20">
+                <a class="a" > assignment10</a>
+            </div>
+
+
+
+            <div class="topec" >
+            {% block content %}
+            <h2>{{ title | default('skills',true) |upper}} </h2>
+                {% if user.firstname == 'haytham'  %}
+                  <h3>wellcom to {{ user.firstname |upper }} {{ user.lastname |upper}} skills</h3>
+                {% else %}
+                  <h3> hi gist</h3>
+               {% endif %}
+            {% for VAL in skills %}
+                <li>{{ VAL }}</li>
+            {% endfor %}
+            {% endblock %}
+                <br><br>
+            </div>
+
+             <div class="item11"><a href="https://www.facebook.com/profile.php?id=100005585585138" class="button2"><img src="{{ url_for('static', filename='images/facebook.png')}}" width="40" height="40" style="position: relative;"/></a></div>
+                <div class="item12"> <a class="a" href="{{ url_for('assignment9') }}"> loggin</a></div>
+            </div>
+    </body>
+</html>

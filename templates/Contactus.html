@@ -1,0 +1,87 @@
+<!doctype html>
+<html dir="eng">
+    <head>
+        <title>Contact us</title>
+                <link rel="Stylesheet" href="{{ url_for('static', filename='css/Contactus.css')}}">
+        <script src="{{ url_for('static', filename='javascript/Contactus.js')}}"></script>
+
+    </head>
+    <body>
+
+            <div class="grid-container">
+
+            <div class="item1"> <img src="{{ url_for('static', filename='images/logoo.jpg')}}"  width="170" height="150" style="position: relative ;border-radius: 8px;"/></a></div>
+            <div class="item2">
+                    <a class="a" href="{{ url_for('hello_home') }}"> About Myself </a>
+                </div>
+            <div class="item3">
+                    <a class="a" href="{{ url_for('HighschoolGraduation') }}"> Highschool Graduation </a>
+                </div>
+            <div class="item4">
+                <a class="a" href="{{ url_for('Edection') }}"> EDUCATION </a>
+            </div>
+            <div class="item5">
+                <a class="a" href="{{ url_for('RelevanteCorse') }}"> Relevant Course</a>
+            </div>
+            <div class="item7">
+                <a class="a" href="{{ url_for('EXPERIENCE') }}">  EXPERIENCE  </a>
+            </div>
+            <div class="item6">
+                <a class="a" href="{{ url_for('assignment8') }}">  SKILLS                </a>
+            </div>
+        <div class="item8">אנא מלאו את הטופס ונשמח ליצור אתכם קשר בהקדם</div>
+        <div class="item11"><a href="https://www.facebook.com/HouseofWheels" class="button2"><img src="facebook.png" width="40" height="40" style="position: relative;"/></a></div>
+        <div class="item12"><img src="Instegram logo.jfif" width="40" height="40" style="position: relative;"/></div>
+        <div class="item20">
+            <a class="a" href="Contactus.html"> צור קשר </a>
+        </div>
+       
+        <div class="item9"> 
+            <div id="error_message"></div>
+            <form id="myform" onsubmit="return validate();">
+         
+                <div class="txtb" >
+                <label class="area">שם פרטי</label><br>
+                <input type="text" id="firstname" placeholder="הכנס שם פרטי " class="input"><br>
+                <br>    </div>
+         
+                <div class="txtb" > 
+                <label class="area">שם משפחה</label><br>
+                <input type="text" id="lastName" placeholder="הכנס שם משפחה " class="input"><br>
+                <br>
+                </div>
+                <div class="txtb" >
+                <label for="כתובת אימייל" class="area">כתובת אימייל</label><br>
+                <input type="text" id="email" placeholder="הכנס אימייל  " class="input"><br>
+                <br>
+                </div>
+                <div class="txtb" >
+                <label for="נושא הפניה"class="area">נושא הפניה</label><br>
+                <input type="text" id="subject" placeholder=" נושה הפניה  " class="input"><br>
+                <br>
+                </div>
+                <div class="txtb" >
+                <label for="מס' טלפון נייד"class="area">מס' טלפון נייד</label><br>
+                <input type="text" id="phone" placeholder="מס' טלפון נייד"class="input">
+                <br>
+                </div>
+        </div>
+                <div class="item10">
+                     <h2 class="area">הודעה</h2>
+                    
+                        <div class="txtb" >
+                    <textarea id="message" rows="5" cols="70" name="comment" form="usrform" class="input"></textarea>
+                        </div>
+                 
+                </div>
+           
+                <div class="submit">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <div class="btn" >
+                        <input type="submit">
+                    </div>
+            </form>
+        </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+    <head>
+
+        <title> homework5 </title>
+<script>
+    function myfunction(x){
+      x.style.background="blue";
+    }
+    function displayDate(){
+      document.getElementById("Demop").innerHTML=Date();
+    }
+</script>
+   
+    </head>
+    <body>
+        <h1>Events Demo</h1>
+        Enter your name <input type="text" onfocus="myfunction(this)">
+
+        <!-- mouse event-->
+        <h2 onmouseover="style.color='red '" onmouseout="style.color='black'">Hello world </h2>
+
+        <!-- click Event -->
+        <p id="Demop">This is arandom text </p>
+        <button type="button" onclick="displayDate()">what is thcurrent date?</button>
+    </body>
+</html>

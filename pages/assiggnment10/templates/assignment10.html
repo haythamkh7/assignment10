@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="Stylesheet" href="{{ url_for('static', filename='css/assignment10.css')}}">
+    <title>haytham</title>
+</head>
+<body>
+        <div class="contact-box">
+
+            <div class="select">
+               {% if  users %}
+                   <h1> My users list : </h1> <br>
+                   {% for user in users %}
+                     <h4> {{ user.id }} : <b>{{ user.first_name }} {{ user.last_name }}</b> ( {{ user.email }} )</h4>
+                   {% endfor %}
+               {% endif %}
+            <br><br>
+            </div>
+
+         <div class="inser" >
+
+             <form class="input_form" action="/insert" method="POST">
+             <h2>Add A new user </h2> <br>
+             <label class="area">id</label><br>
+             <input type="text" name="id" id="id" placeholder="input id" class="input"><br><br>
+
+             <label class="area">first name</label><br>
+             <input type="text" name="first_name" id="first_name" placeholder="input first name " class="input"><br><br>
+
+             <label class="area">last name</label><br>
+             <input type="text" name="last_name" id="last_name" placeholder="input last name" class="input"><br><br>
+
+             <label  class="area"> email</label><br>
+             <input type="email" name="email" id="email" placeholder="input your email " class="input"><br><br>
+             <input type="submit"  onclick="alert('A new user was created')">
+             </form>
+         </div>
+
+          <div class="Delete" >
+          <h2>Delete user : </h2>
+              <form action="/delete_user" method="GET">
+                User ID : <label> <input name="id" type="text"> </label>
+                <input type="submit" onclick="alert('The user was deleted')">
+              </form>
+           </div>
+
+
+           <div class="update" >
+
+             <form class="input_form" action="/update" method="POST">
+             <h2>Update  user </h2> <br>
+             <label class="area">id</label><br>
+             <input type="text" name="id" id="id" placeholder="input id" class="input"><br><br>
+
+             <label class="area">first name</label><br>
+             <input type="text" name="first_name" id="first_name" placeholder="input first name " class="input"><br><br>
+
+             <label class="area">last name</label><br>
+             <input type="text" name="last_name" id="last_name" placeholder="input last name" class="input"><br><br>
+
+             <label  class="area"> email</label><br>
+             <input type="email" name="email" id="email" placeholder="input your email " class="input"><br><br>
+             <input type="submit" onclick="alert('The user was updated')">
+             </form>
+         </div>
+        <div class="back">
+                <a class="a" href="{{ url_for('hello_home') }}"> back</a>
+        </div>
+  </div>
+
+</body>
+</html>

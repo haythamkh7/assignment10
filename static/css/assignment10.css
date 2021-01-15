@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+body{
+  background: rgba(255,250,230);
+}
+.contact-box{
+
+   display: grid;
+    grid-template-columns: 25% 20% 5% 5% 20% 25%  ;
+    grid-template-rows:  100px 400px 400px 40px 100px 40px;
+    border: 1px solid gray;margin: 8px 0 ; padding: 12px 18px;border-radius: 8px;
+
+}
+.select{
+    grid-area: 2/2/3/6;
+    background:rgba(255,250,230);
+    font-weight: bold;
+    font-size: 18px;
+    color:black;
+    border-radius: 8px;
+    border-style: solid;
+     border-color: black;
+    text-align: left;
+
+}
+.inser{
+    grid-area: 3/2/4/4;
+    background:rgba(255,250,230);
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color:black;
+    border-radius: 8px;
+
+}
+.update{
+    grid-area: 3/4/4/6;
+    background:rgba(255,250,230);
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color:black;
+    border-radius: 8px;
+
+}
+.Delete{
+    grid-area: 5/2/6/6;
+    background: rgb(255, 250, 230);
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color:black;
+    border-radius: 8px;
+
+}
+.back{
+    grid-area: 6/3/7/5;
+    background: rgb(27, 18, 79);
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    font-size: 22px;
+
+}
+.a{
+    color: black;
+    background-color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+}

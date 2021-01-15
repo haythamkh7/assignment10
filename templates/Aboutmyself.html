@@ -1,0 +1,26 @@
+{% extends 'assignment8.html' %}
+               {% block content %}
+            <div class="topec" >
+                <h1 >personal details </h1> <hr>   
+                   Name: <br>  HAYTHAM KHAMAISI <br> <br>
+                   Email address <a style="color: black "; href="mailto:haythamkhmaisi@gmail.com">haythamkhmaisi@gmail.com</a> <br> <br>
+                   Phone number: <a style="color: black;" href="tel:0522977818">0522977818</a>    <br> <br> 
+                   linkedIn : <a  style="color: black " href="https://www.linkedin.com/in/haytham-khmaisi-409505197/">my linkedIn</a>
+               </div>
+            <div class="input">
+
+
+                <p style="text-align: left;"><strong><br><br><br>
+
+                    A third  year Information Systems Management  student </strong>with a solid academic
+                    background and a comprehensive skill set,and highly capable of attention to details.
+                   Underpinned by experience in pressurized situations necessitating self-motivation 
+                   and positive response to pressure.</p>  <br> <hr> 
+                </div>
+                <div class="img1">
+                    <a href="Haytham_CV.pdf" download class="button"><img src="{{ url_for('static', filename='images/pdf.png')}}"  width="70px" height="100px"> </a>
+                </div>
+
+
+
+                      {% endblock %}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Title</title>
+</head>
+<body>
+
+             <div class="item1"> <img src="{{ url_for('static', filename='images/logoo.jpg')}}"  width="170" height="150" style="position: relative ;border-radius: 8px;"/></a></div>
+            <div class="item2">
+                    <a class="a" href="{{ url_for('hello_home') }}"> <h3> Hello {{ session.get('username') }}</h3> </a>
+                </div>
+            <div class="item3">
+                    <a class="a" href="{{ url_for('HighschoolGraduation') }}"> Highschool Graduation </a>
+                </div>
+            <div class="item4">
+                <a class="a" href="{{ url_for('Edection') }}"> EDUCATION </a>
+            </div>
+            <div class="item5">
+                <a class="a" href="{{ url_for('RelevanteCorse') }}"> Relevant Course</a>
+            </div>
+            <div class="item7">
+                <a class="a" href="{{ url_for('EXPERIENCE') }}">  EXPERIENCE  </a>
+            </div>
+            <div class="item6">
+                <a class="a" href="{{ url_for('assignment8') }}">  SKILLS                </a>
+            </div>
+
+
+</body>
+</html>

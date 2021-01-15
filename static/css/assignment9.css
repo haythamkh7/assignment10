@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact-box{
+    width: 100%;
+    max-width: 700px;
+    background: #b17c7c;
+    position: absolute ;
+    top: 50% ;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 40px ;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+
+}
+.search_form lable1{
+    color: #b30000;
+    font-size: 40px ;
+
+}
